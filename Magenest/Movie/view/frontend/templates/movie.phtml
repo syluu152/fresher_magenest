@@ -1,0 +1,36 @@
+<?php
+$movie = $block->getMovie();
+?>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Rating</th>
+        <th>Director</th>
+        <th>Actor</th>
+    </tr>
+    <?php
+
+    foreach ($movie as $data){
+//        var_dump($data);
+    ?>
+    <tr>
+        <td>
+            <?= $data['movie']?>
+        </td>
+        <td>
+            <?= $data['description']?>
+        </td>
+        <td>
+            <?= $data['rating']?>
+        </td>
+        <td>
+            <?= $data['director']?>
+        </td>
+        <td>
+            <?= $data['actor']?>
+        </td>
+    </tr>
+        <?php }
+    ?>
+</table>

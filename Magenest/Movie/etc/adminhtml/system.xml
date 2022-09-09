@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magenest" translate="label" sortOrder="20">
+            <label>Magenest</label>
+        </tab>
+        <section id="movie" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Movie</label>
+            <tab>magenest</tab>
+            <resource>Magenest_Movie::movie_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="textfield" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Text Field</label>
+                </field>
+                <field id="yesnofield" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label><![CDATA[Yes/No_Field_<i style="color:red">abcd</i>]]></label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="dropdown_example" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Custom Select Field</label>
+                    <source_model>Magenest\Movie\Model\Config\Source\Custom</source_model>
+                </field>
+                <field id="rowtable1" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Rows in table
+                        “magenest_movie”</label>
+                </field>
+                <field id="rowtable2" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Rows in table
+                        “magenest_actor”</label>
+                </field>
+                <field id="button_id" translate="label" type="button" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Button Field</label>
+<!--                    <frontend_model>[Vendor]\[Module]\Block\System\Config\Button</frontend_model>-->
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
