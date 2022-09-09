@@ -14,11 +14,11 @@
                 <field id="textfield" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label>Text Field</label>
                 </field>
-                <field id="yesnofield" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="yesnofield" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label><![CDATA[Yes/No_Field_<i style="color:red">abcd</i>]]></label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="dropdown_example" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="dropdown_movie" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label>Custom Select Field</label>
                     <source_model>Magenest\Movie\Model\Config\Source\Custom</source_model>
                 </field>
@@ -32,7 +32,6 @@
                 </field>
                 <field id="button_id" translate="label" type="button" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Button Field</label>
-<!--                    <frontend_model>[Vendor]\[Module]\Block\System\Config\Button</frontend_model>-->
                 </field>
             </group>
         </section>
