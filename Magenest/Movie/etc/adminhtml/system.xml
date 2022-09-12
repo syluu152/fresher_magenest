@@ -29,6 +29,7 @@
                 <field id="rowtable2" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Rows in table
                         “magenest_actor”</label>
+                    <frontend_model>Magento\Analytics\Block\Adminhtml\System\Config\AdditionalComment</frontend_model>
                 </field>
                 <field id="button_id" translate="label" type="button" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Button Field</label>
